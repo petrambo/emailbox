@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title>send email</title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <center>
+        <h1 class = 'alert alert-success'>กล่องข้อความ</h1>
+    <form method="POST">
+        <!-- Very Important csrf Token -->
+        {% csrf_token %}
+        <div class = "form-group">
+            <p>
+            <h3>{{ form.as_p }}</h3>
+        </p>
+            <br>
+            <input type="submit" name="Subscribe" class = 'btn btn-primary btn-lg'>
+                </div>
+            </form>
+        </center>
+</body>
+</html>
